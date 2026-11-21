@@ -187,13 +187,13 @@ body::before {
     position: relative;
     width: 100%;
     min-height: 735px;
-    aspect-ratio: 1 / 1.414;
+    aspect-ratio: auto;
     background: var(--color-paper);
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-page);
     transform-style: preserve-3d;
     transition: transform var(--transition-page), box-shadow var(--transition-base), opacity var(--transition-base);
-    overflow: hidden;
+    overflow: visible;
 }
 
 .page::before {
