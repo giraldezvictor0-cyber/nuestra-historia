@@ -1,0 +1,1393 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nuestra historia todavía tiene páginas por escribir - Un libro digital romántico para Yaheyli">
+    <title>Nuestra historia todavía tiene páginas por escribir</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="book-container" id="bookContainer">
+        <!-- PORTADA -->
+        <section class="page cover-page" data-page="cover">
+            <div class="page-content">
+                <div class="ornamental-frame">
+                    <div class="rose-decoration top-left"></div>
+                    <div class="rose-decoration top-right"></div>
+                    <div class="rose-decoration bottom-left"></div>
+                    <div class="rose-decoration bottom-right"></div>
+                    <div class="corner-flourish tl"></div>
+                    <div class="corner-flourish tr"></div>
+                    <div class="corner-flourish bl"></div>
+                    <div class="corner-flourish br"></div>
+
+                    <div class="cover-inner">
+                        <div class="wax-seal-large" aria-label="Sello de cera">
+                            <span class="seal-initial">V</span>
+                        </div>
+
+                        <h1 class="book-title">«Nuestra historia todavía tiene páginas por escribir»</h1>
+
+                        <div class="divider">
+                            <span class="divider-rose">🌹</span>
+                        </div>
+
+                        <p class="dedication">
+                            Para Yaheyli, mi niña.<br>
+                            De Víctor, alguien que todavía tiene muchísimas cosas bonitas que quisiera vivir contigo.
+                        </p>
+
+                        <div class="cover-flowers">
+                            <span class="petal">🌸</span>
+                            <span class="petal">🌹</span>
+                            <span class="petal">🌸</span>
+                            <span class="petal">🌹</span>
+                            <span class="petal">🌸</span>
+                        </div>
+
+                        <button class="btn-open-book" id="openBookBtn" aria-label="Abrir el libro">
+                            <span class="btn-text">Abrir</span>
+                            <span class="btn-icon">→</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="page-shadow"></div>
+        </section>
+
+        <!-- ÍNDICE -->
+        <section class="page index-page" data-page="index" style="display: none;">
+            <div class="page-content">
+                <div class="ornamental-frame">
+                    <div class="rose-decoration top-left"></div>
+                    <div class="rose-decoration top-right"></div>
+                    <div class="rose-decoration bottom-left"></div>
+                    <div class="rose-decoration bottom-right"></div>
+
+                    <div class="index-inner">
+                        <h2 class="page-title">Índice</h2>
+                        <div class="divider"><span class="divider-rose">🌹</span></div>
+
+                        <nav class="chapter-list" role="navigation" aria-label="Capítulos del libro">
+                            <a href="#" class="chapter-link" data-target="1">
+                                <span class="chapter-num">I</span>
+                                <span class="chapter-title">Antes de que nuestra historia comenzara</span>
+                            </a>
+                            <a href="#" class="chapter-link" data-target="2">
+                                <span class="chapter-num">II</span>
+                                <span class="chapter-title">La niña que se convirtió en alguien especial</span>
+                            </a>
+                            <a href="#" class="chapter-link" data-target="3">
+                                <span class="chapter-num">III</span>
+                                <span class="chapter-title">Aunque existieran kilómetros entre nosotros</span>
+                            </a>
+                            <a href="#" class="chapter-link" data-target="4">
+                                <span class="chapter-num">IV</span>
+                                <span class="chapter-title">Nuestros momentos más bonitos</span>
+                            </a>
+                            <a href="#" class="chapter-link" data-target="5">
+                                <span class="chapter-num">V</span>
+                                <span class="chapter-title">También tuvimos días difíciles</span>
+                            </a>
+                            <a href="#" class="chapter-link" data-target="6">
+                                <span class="chapter-num">VI</span>
+                                <span class="chapter-title">Las cosas que reconozco y quiero mejorar</span>
+                            </a>
+                            <a href="#" class="chapter-link" data-target="7">
+                                <span class="chapter-num">VII</span>
+                                <span class="chapter-title">Todos los sueños que imaginé contigo</span>
+                            </a>
+                            <a href="#" class="chapter-link" data-target="8">
+                                <span class="chapter-num">VIII</span>
+                                <span class="chapter-title">Todas las pequeñas cosas que hice pensando en ti</span>
+                            </a>
+                            <a href="#" class="chapter-link" data-target="9">
+                                <span class="chapter-num">IX</span>
+                                <span class="chapter-title">No quiero que nuestros errores sean lo único que recordemos</span>
+                            </a>
+                            <a href="#" class="chapter-link" data-target="10">
+                                <span class="chapter-num">X</span>
+                                <span class="chapter-title">Lo que estoy dispuesto a demostrar</span>
+                            </a>
+                            <a href="#" class="chapter-link" data-target="11">
+                                <span class="chapter-num">XI</span>
+                                <span class="chapter-title">Todavía sueño con nuevas páginas contigo</span>
+                            </a>
+                            <a href="#" class="chapter-link" data-target="12">
+                                <span class="chapter-num">XII</span>
+                                <span class="chapter-title">Una carta para ti, Yaheyli</span>
+                            </a>
+                            <a href="#" class="chapter-link" data-target="minigames">
+                                <span class="chapter-num">🎮</span>
+                                <span class="chapter-title">Nuestros Mini-Juegos de Recuerdos</span>
+                            </a>
+                        </nav>
+
+                        <div class="index-flowers">
+                            <span>🌸</span><span>🌹</span><span>🌸</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-shadow"></div>
+        </section>
+
+        <!-- CAPÍTULOS -->
+        <!-- CAPÍTULO 1 -->
+        <section class="page chapter-page" data-page="1" data-chapter="1" style="display: none;">
+            <div class="page-content">
+                <div class="ornamental-frame">
+                    <div class="rose-decoration top-left"></div>
+                    <div class="rose-decoration top-right"></div>
+                    <div class="rose-decoration bottom-left"></div>
+                    <div class="rose-decoration bottom-right"></div>
+
+                    <div class="chapter-inner">
+                        <header class="chapter-header">
+                            <span class="chapter-label">Capítulo I</span>
+                            <h2 class="chapter-title-main">Antes de que nuestra historia comenzara</h2>
+                            <div class="divider"><span class="divider-rose">🌹</span></div>
+                        </header>
+
+                        <div class="chapter-text">
+                            <p class="drop-cap">El comienzo de nuestra relación y cómo llegamos a conocernos.</p>
+
+                            <p>Hay instantes que, sin saberlo, cambian el rumbo de todo. El nuestro comenzó de una forma que nunca imaginé, y cada paso que dimos desde entonces fue construyendo algo que, a pesar de todo, sigue siendo importante para mí.</p>
+
+                            <div class="memory-space" contenteditable="true" data-placeholder="Escribe aquí cómo nos conocimos, el primer mensaje, la primera vez que nos vimos..." aria-label="Espacio para recuerdos: cómo nos conocimos">
+                                <span class="placeholder-text">Escribe aquí cómo nos conocimos, el primer mensaje, la primera vez que nos vimos...</span>
+                            </div>
+
+                            <p>Deja espacios para completar los recuerdos que falten. Cada detalle cuenta, cada palabra tiene su lugar en esta historia.</p>
+
+                            <div class="memory-space" contenteditable="true" data-placeholder="Más recuerdos del principio..." aria-label="Espacio para más recuerdos del principio">
+                                <span class="placeholder-text">Más recuerdos del principio: nuestra primera llamada, la primera vez que supe que eras especial...</span>
+                            </div>
+                        </div>
+
+                        <div class="envelope-container">
+                            <button class="envelope" data-envelope="1" aria-label="Abrir carta del Capítulo 1">
+                                <div class="envelope-flap"></div>
+                                <div class="envelope-body">
+                                    <div class="wax-seal-small"></div>
+                                </div>
+                            </button>
+                            <p class="envelope-hint">Pulsa el sobre para descubrir una carta</p>
+                        </div>
+
+                        <div class="envelope-letter hidden" id="letter1" aria-live="polite">
+                            <div class="letter-paper">
+                                <div class="letter-content">
+                                    <p>Yaheyli:</p>
+                                    <p>Antes de que nuestra historia comenzara, ya estabas en mi destino. No lo sabía, pero cada paso que di me acercaba a ti. Gracias por existir y por permitirme ser parte de tu vida, aunque sea por un tiempo.</p>
+                                    <p class="letter-signature">Con todo mi cariño,<br>Víctor</p>
+                                </div>
+                            </div>
+                            <button class="close-letter" data-target="1" aria-label="Cerrar carta">×</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-shadow"></div>
+        </section>
+
+        <!-- CAPÍTULO 2 -->
+        <section class="page chapter-page" data-page="2" data-chapter="2" style="display: none;">
+            <div class="page-content">
+                <div class="ornamental-frame">
+                    <div class="rose-decoration top-left"></div>
+                    <div class="rose-decoration top-right"></div>
+                    <div class="rose-decoration bottom-left"></div>
+                    <div class="rose-decoration bottom-right"></div>
+
+                    <div class="chapter-inner">
+                        <header class="chapter-header">
+                            <span class="chapter-label">Capítulo II</span>
+                            <h2 class="chapter-title-main">La niña que se convirtió en alguien especial</h2>
+                            <div class="divider"><span class="divider-rose">🌹</span></div>
+                        </header>
+
+                        <div class="chapter-text">
+                            <p class="drop-cap">Dedica páginas a Yaheyli, a lo que representa para Víctor y a los sentimientos que desarrolló por ella.</p>
+
+                            <p>Eres la luz que llegó a mi vida cuando más la necesitaba. Tu forma de ser, tu risa, tu manera de ver el mundo... todo en ti me enamoró poco a poco, sin prisa, pero sin pausa.</p>
+
+                            <div class="photo-frame" data-photo="foto_0001.png" data-caption="Yaheyli - Un recuerdo especial">
+                                <img src="fotos/foto_0001.png" alt="Yaheyli - Un recuerdo especial" loading="lazy">
+                                <div class="photo-caption">Un recuerdo especial</div>
+                            </div>
+
+                            <p>Lo que representas para mí va más allá de las palabras. Eres mi refugio, mi inspiración, la persona con la que quiero compartir cada amanecer y cada atardecer.</p>
+
+                            <div class="memory-space" contenteditable="true" data-placeholder="Qué significa Yaheyli para mí, qué sentimientos despertó en mí..." aria-label="Espacio para sentimientos hacia Yaheyli">
+                                <span class="placeholder-text">Qué significa Yaheyli para mí, los sentimientos que despertó en mí desde el principio, por qué es especial...</span>
+                            </div>
+
+                            <div class="photo-frame" data-photo="foto_0002.png" data-caption="Otro momento hermoso">
+                                <img src="fotos/foto_0002.png" alt="Otro momento hermoso" loading="lazy">
+                                <div class="photo-caption">Otro momento hermoso</div>
+                            </div>
+
+                            <div class="photo-frame" data-photo="foto_0036.png" data-caption="Su sonrisa">
+                                <img src="fotos/foto_0036.png" alt="Su sonrisa" loading="lazy">
+                                <div class="photo-caption">Su sonrisa</div>
+                            </div>
+                            <div class="photo-frame" data-photo="foto_0037.png" data-caption="Mirada de amor">
+                                <img src="fotos/foto_0037.png" alt="Mirada de amor" loading="lazy">
+                                <div class="photo-caption">Mirada de amor</div>
+                            </div>
+                        </div>
+
+                        <div class="envelope-container">
+                            <button class="envelope" data-envelope="2" aria-label="Abrir carta del Capítulo 2">
+                                <div class="envelope-flap"></div>
+                                <div class="envelope-body">
+                                    <div class="wax-seal-small"></div>
+                                </div>
+                            </button>
+                            <p class="envelope-hint">Pulsa el sobre para descubrir una carta</p>
+                        </div>
+
+                        <div class="envelope-letter hidden" id="letter2" aria-live="polite">
+                            <div class="letter-paper">
+                                <div class="letter-content">
+                                    <p>Mi niña:</p>
+                                    <p>Te quiero no solo por quién eres, sino por quién soy yo cuando estoy contigo. Gracias por hacerme mejor persona, por enseñarme a amar de verdad, por ser mi paz en medio del caos. Eres, y siempre serás, alguien especial para mí.</p>
+                                    <p class="letter-signature">Tu Víctor</p>
+                                </div>
+                            </div>
+                            <button class="close-letter" data-target="2" aria-label="Cerrar carta">×</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-shadow"></div>
+        </section>
+
+        <!-- CAPÍTULO 3 -->
+        <section class="page chapter-page" data-page="3" data-chapter="3" style="display: none;">
+            <div class="page-content">
+                <div class="ornamental-frame">
+                    <div class="rose-decoration top-left"></div>
+                    <div class="rose-decoration top-right"></div>
+                    <div class="rose-decoration bottom-left"></div>
+                    <div class="rose-decoration bottom-right"></div>
+
+                    <div class="chapter-inner">
+                        <header class="chapter-header">
+                            <span class="chapter-label">Capítulo III</span>
+                            <h2 class="chapter-title-main">Aunque existieran kilómetros entre nosotros</h2>
+                            <div class="divider"><span class="divider-rose">🌹</span></div>
+                        </header>
+
+                        <div class="chapter-text">
+                            <p class="drop-cap">Nuestra relación a distancia entre Panamá y Texas, las conversaciones, la ilusión de estar juntos y las ganas de abrazarnos.</p>
+
+                            <p>La distancia nunca fue un obstáculo para lo que sentimos. Cada mensaje, cada llamada, cada videollamada era un puente que acortaba los kilómetros entre Panamá y Texas.</p>
+
+                            <div class="photo-frame" data-photo="foto_0003.png" data-caption="Videollamadas que acortaban distancias">
+                                <img src="fotos/foto_0003.png" alt="Videollamadas que acortaban distancias" loading="lazy">
+                                <div class="photo-caption">Videollamadas que acortaban distancias</div>
+                            </div>
+
+                            <p>Las horas de diferencia se volvían segundos cuando escuchaba tu voz. La ilusión de estar juntos, de poder abrazarnos, de caminar de la mano, era lo que me daba fuerzas cada día.</p>
+
+                            <div class="memory-space" contenteditable="true" data-placeholder="Recuerdos de la distancia: conversaciones nocturnas, la cuenta regresiva para vernos, lo que sentía al saber que estabas lejos..." aria-label="Espacio para recuerdos de la distancia">
+                                <span class="placeholder-text">Recuerdos de la distancia: nuestras conversaciones nocturnas, la cuenta regresiva para vernos, lo que sentía al saber que estabas lejos pero cerca en mi corazón...</span>
+                            </div>
+
+                            <div class="photo-frame" data-photo="foto_0004.png" data-caption="El mapa de nuestra distancia">
+                                <img src="fotos/foto_0004.png" alt="El mapa de nuestra distancia" loading="lazy">
+                                <div class="photo-caption">Panamá ↔ Texas: kilómetros de amor</div>
+                            </div>
+
+                            <div class="photo-frame" data-photo="foto_0034.png" data-caption="Contando los días">
+                                <img src="fotos/foto_0034.png" alt="Contando los días" loading="lazy">
+                                <div class="photo-caption">Contando los días</div>
+                            </div>
+                            <div class="photo-frame" data-photo="foto_0035.png" data-caption="Puente de amor">
+                                <img src="fotos/foto_0035.png" alt="Puente de amor" loading="lazy">
+                                <div class="photo-caption">Puente de amor</div>
+                            </div>
+                        </div>
+
+                        <div class="envelope-container">
+                            <button class="envelope" data-envelope="3" aria-label="Abrir carta del Capítulo 3">
+                                <div class="envelope-flap"></div>
+                                <div class="envelope-body">
+                                    <div class="wax-seal-small"></div>
+                                </div>
+                            </button>
+                            <p class="envelope-hint">Pulsa el sobre para descubrir una carta</p>
+                        </div>
+
+                        <div class="envelope-letter hidden" id="letter3" aria-live="polite">
+                            <div class="letter-paper">
+                                <div class="letter-content">
+                                    <p>Mi amor:</p>
+                                    <p>No importa cuántos kilómetros nos separen, mi corazón late en tu mismo tiempo. Cada día que pasa sin verte es un día más cerca del abrazo que tanto anhelo. Te espero, te esperaré siempre.</p>
+                                    <p class="letter-signature">Con toda mi alma,<br>Víctor</p>
+                                </div>
+                            </div>
+                            <button class="close-letter" data-target="3" aria-label="Cerrar carta">×</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-shadow"></div>
+        </section>
+
+        <!-- CAPÍTULO 4 -->
+        <section class="page chapter-page" data-page="4" data-chapter="4" style="display: none;">
+            <div class="page-content">
+                <div class="ornamental-frame">
+                    <div class="rose-decoration top-left"></div>
+                    <div class="rose-decoration top-right"></div>
+                    <div class="rose-decoration bottom-left"></div>
+                    <div class="rose-decoration bottom-right"></div>
+
+                    <div class="chapter-inner">
+                        <header class="chapter-header">
+                            <span class="chapter-label">Capítulo IV</span>
+                            <h2 class="chapter-title-main">Nuestros momentos más bonitos</h2>
+                            <div class="divider"><span class="divider-rose">🌹</span></div>
+                        </header>
+
+                        <div class="chapter-text">
+                            <p class="drop-cap">Recopila detalles románticos, mensajes, fotografías, momentos felices y recuerdos especiales. Deja espacios para incorporar conversaciones reales.</p>
+
+                            <div class="memory-gallery" id="galleryChapter4">
+                                <div class="photo-frame" data-photo="foto_0005.png" data-caption="Un momento feliz">
+                                    <img src="fotos/foto_0005.png" alt="Un momento feliz" loading="lazy">
+                                    <div class="photo-caption">Un momento feliz</div>
+                                </div>
+                                <div class="photo-frame" data-photo="foto_0006.png" data-caption="Otro recuerdo hermoso">
+                                    <img src="fotos/foto_0006.png" alt="Otro recuerdo hermoso" loading="lazy">
+                                    <div class="photo-caption">Otro recuerdo hermoso</div>
+                                </div>
+                                <div class="photo-frame" data-photo="foto_0007.png" data-caption="Sonrisas compartidas">
+                                    <img src="fotos/foto_0007.png" alt="Sonrisas compartidas" loading="lazy">
+                                    <div class="photo-caption">Sonrisas compartidas</div>
+                                </div>
+                            </div>
+
+                            <div class="memory-space" contenteditable="true" data-placeholder="Escribe aquí vuestros momentos más bonitos, conversaciones reales, mensajes que se guardan en el corazón..." aria-label="Espacio para momentos bonitos y conversaciones reales">
+                                <span class="placeholder-text">Nuestros momentos más bonitos: conversaciones reales que guardo en el corazón, mensajes que nunca borraré, risas compartidas, silencios cómodos...</span>
+                            </div>
+
+                            <div class="photo-frame" data-photo="foto_0008.png" data-caption="Detalles que importan">
+                                <img src="fotos/foto_0008.png" alt="Detalles que importan" loading="lazy">
+                                <div class="photo-caption">Detalles que importan</div>
+                            </div>
+
+                            <div class="photo-frame" data-photo="foto_0032.png" data-caption="Sonrisa compartida">
+                                <img src="fotos/foto_0032.png" alt="Sonrisa compartida" loading="lazy">
+                                <div class="photo-caption">Sonrisa compartida</div>
+                            </div>
+                            <div class="photo-frame" data-photo="foto_0033.png" data-caption="Momento perfecto">
+                                <img src="fotos/foto_0033.png" alt="Momento perfecto" loading="lazy">
+                                <div class="photo-caption">Momento perfecto</div>
+                            </div>
+                            <div class="photo-frame" data-photo="foto_0015.png" data-caption="Partida de Fortnite juntos">
+                                <img src="fotos/foto_0015.png" alt="Partida de Fortnite juntos" loading="lazy">
+                                <div class="photo-caption">Fortnite: nuestra partida juntos</div>
+                            </div>
+                        </div>
+
+                        <div class="envelope-container">
+                            <button class="envelope" data-envelope="4" aria-label="Abrir carta del Capítulo 4">
+                                <div class="envelope-flap"></div>
+                                <div class="envelope-body">
+                                    <div class="wax-seal-small"></div>
+                                </div>
+                            </button>
+                            <p class="envelope-hint">Pulsa el sobre para descubrir una carta</p>
+                        </div>
+
+                        <div class="envelope-letter hidden" id="letter4" aria-live="polite">
+                            <div class="letter-paper">
+                                <div class="letter-content">
+                                    <p>Yaheyli:</p>
+                                    <p>Cada momento contigo es un tesoro que guardo en el alma. No hay día que no agradezca haberte conocido. Estos recuerdos son la prueba de que lo nuestro fue real, fue bonito, y vale la pena recordarlo siempre.</p>
+                                    <p class="letter-signature">Siempre tuyo,<br>Víctor</p>
+                                </div>
+                            </div>
+                            <button class="close-letter" data-target="4" aria-label="Cerrar carta">×</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-shadow"></div>
+        </section>
+
+        <!-- CAPÍTULO 5 -->
+        <section class="page chapter-page" data-page="5" data-chapter="5" style="display: none;">
+            <div class="page-content">
+                <div class="ornamental-frame">
+                    <div class="rose-decoration top-left"></div>
+                    <div class="rose-decoration top-right"></div>
+                    <div class="rose-decoration bottom-left"></div>
+                    <div class="rose-decoration bottom-right"></div>
+
+                    <div class="chapter-inner">
+                        <header class="chapter-header">
+                            <span class="chapter-label">Capítulo V</span>
+                            <h2 class="chapter-title-main">También tuvimos días difíciles</h2>
+                            <div class="divider"><span class="divider-rose">🌹</span></div>
+                        </header>
+
+                        <div class="chapter-text">
+                            <p class="drop-cap">Habla de las discusiones, los desacuerdos, los errores, las inseguridades y los momentos en que no supimos entendernos. No escondas los problemas ni presentes nuestra relación como perfecta.</p>
+
+                            <p>Nuestra historia no fue perfecta. Hubo días grises, palabras que dolieron, silencios que pesaron, malentendidos que nos alejaron. Hubo inseguridades mías que proyecté en ti, reacciones tuyas que no supe leer, momentos en que el orgullo fue más grande que el amor.</p>
+
+                            <div class="memory-space" contenteditable="true" data-placeholder="Recuerdos de los días difíciles: discusiones, desacuerdos, errores, inseguridades... sé honesto" aria-label="Espacio para días difíciles">
+                                <span class="placeholder-text">Días difíciles: nuestras discusiones, los desacuerdos que nos dolieron, mis errores, mis inseguridades, los momentos en que no supimos entendernos, lo que aprendí de cada caída...</span>
+                            </div>
+
+                            <p>No quiero ocultar nada. Amar también es aceptar que a veces fallamos, que a veces nos equivocamos, y que de esos errores se aprende si hay voluntad de hacerlo.</p>
+
+                            <div class="photo-frame" data-photo="foto_0009.png" data-caption="Incluso en lo difícil, hubo aprendizaje">
+                                <img src="fotos/foto_0009.png" alt="Incluso en lo difícil, hubo aprendizaje" loading="lazy">
+                                <div class="photo-caption">Incluso en lo difícil, hubo aprendizaje</div>
+                            </div>
+
+                            <div class="photo-frame" data-photo="foto_0030.png" data-caption="Superando obstáculos">
+                                <img src="fotos/foto_0030.png" alt="Superando obstáculos" loading="lazy">
+                                <div class="photo-caption">Superando obstáculos</div>
+                            </div>
+                            <div class="photo-frame" data-photo="foto_0031.png" data-caption="Juntos en la tormenta">
+                                <img src="fotos/foto_0031.png" alt="Juntos en la tormenta" loading="lazy">
+                                <div class="photo-caption">Juntos en la tormenta</div>
+                            </div>
+                        </div>
+
+                        <div class="envelope-container">
+                            <button class="envelope" data-envelope="5" aria-label="Abrir carta del Capítulo 5">
+                                <div class="envelope-flap"></div>
+                                <div class="envelope-body">
+                                    <div class="wax-seal-small"></div>
+                                </div>
+                            </button>
+                            <p class="envelope-hint">Pulsa el sobre para descubrir una carta</p>
+                        </div>
+
+                        <div class="envelope-letter hidden" id="letter5" aria-live="polite">
+                            <div class="letter-paper">
+                                <div class="letter-content">
+                                    <p>Mi niña:</p>
+                                    <p>Reconozco cada error, cada palabra que te lastimó, cada vez que no supe escucharte. No te pido que los olvides, solo que sepas que los llevo conmigo como recordatorio de quién no quiero ser. Quiero ser mejor, por ti y por mí.</p>
+                                    <p class="letter-signature">Con humildad,<br>Víctor</p>
+                                </div>
+                            </div>
+                            <button class="close-letter" data-target="5" aria-label="Cerrar carta">×</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-shadow"></div>
+        </section>
+
+        <!-- CAPÍTULO 6 -->
+        <section class="page chapter-page" data-page="6" data-chapter="6" style="display: none;">
+            <div class="page-content">
+                <div class="ornamental-frame">
+                    <div class="rose-decoration top-left"></div>
+                    <div class="rose-decoration top-right"></div>
+                    <div class="rose-decoration bottom-left"></div>
+                    <div class="rose-decoration bottom-right"></div>
+
+                    <div class="chapter-inner">
+                        <header class="chapter-header">
+                            <span class="chapter-label">Capítulo VI</span>
+                            <h2 class="chapter-title-main">Las cosas que reconozco y quiero mejorar</h2>
+                            <div class="divider"><span class="divider-rose">🌹</span></div>
+                        </header>
+
+                        <div class="chapter-text">
+                            <p class="drop-cap">Víctor reconoce que algunas de sus reacciones pudieron lastimar a Yaheyli. Quiere aprender a comunicarse mejor, escuchar, controlar sus emociones, comprenderla y demostrar cambios con hechos.</p>
+
+                            <p>Miro hacia atrás y veo momentos en los que mi forma de reaccionar te hizo daño. No fue mi intención, pero el impacto fue real. Asumo mi responsabilidad.</p>
+
+                            <ul class="commitment-list">
+                                <li><span class="commitment-icon">🌹</span> Aprender a comunicarme con calma y claridad</li>
+                                <li><span class="commitment-icon">🌹</span> Escucharte de verdad, sin interrumpir, sin defenderme</li>
+                                <li><span class="commitment-icon">🌹</span> Controlar mis emociones antes de hablar</li>
+                                <li><span class="commitment-icon">🌹</span> Comprender tu perspectiva, aunque sea distinta a la mía</li>
+                                <li><span class="commitment-icon">🌹</span> Demostrar los cambios con hechos, no solo palabras</li>
+                            </ul>
+
+                            <div class="memory-space" contenteditable="true" data-placeholder="Qué reconozco específicamente, en qué quiero mejorar, qué pasos concretos voy a dar..." aria-label="Espacio para compromisos de mejora">
+                                <span class="placeholder-text">Qué reconozco específicamente: mis reacciones impulsivas, mis palabras hirientes, mi falta de escucha... En qué quiero mejorar: paciencia, empatía, comunicación asertiva... Qué pasos concretos voy a dar...</span>
+                            </div>
+
+                            <div class="photo-frame" data-photo="foto_0010.png" data-caption="El camino del crecimiento">
+                                <img src="fotos/foto_0010.png" alt="El camino del crecimiento" loading="lazy">
+                                <div class="photo-caption">El camino del crecimiento</div>
+                            </div>
+                        </div>
+
+                        <div class="envelope-container">
+                            <button class="envelope" data-envelope="6" aria-label="Abrir carta del Capítulo 6">
+                                <div class="envelope-flap"></div>
+                                <div class="envelope-body">
+                                    <div class="wax-seal-small"></div>
+                                </div>
+                            </button>
+                            <p class="envelope-hint">Pulsa el sobre para descubrir una carta</p>
+                        </div>
+
+                        <div class="envelope-letter hidden" id="letter6" aria-live="polite">
+                            <div class="letter-paper">
+                                <div class="letter-content">
+                                    <p>Yaheyli:</p>
+                                    <p>Este compromiso no es para que vuelvas, es para que sepas que estoy trabajando en mí. Cada día elijo ser mejor, elegir la calma sobre la reacción, la escucha sobre la defensa, el amor sobre el orgullo. Lo hago por mí, y lo hago pensando en ti.</p>
+                                    <p class="letter-signature">Con determinación,<br>Víctor</p>
+                                </div>
+                            </div>
+                            <button class="close-letter" data-target="6" aria-label="Cerrar carta">×</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-shadow"></div>
+        </section>
+
+        <!-- CAPÍTULO 7 -->
+        <section class="page chapter-page" data-page="7" data-chapter="7" style="display: none;">
+            <div class="page-content">
+                <div class="ornamental-frame">
+                    <div class="rose-decoration top-left"></div>
+                    <div class="rose-decoration top-right"></div>
+                    <div class="rose-decoration bottom-left"></div>
+                    <div class="rose-decoration bottom-right"></div>
+
+                    <div class="chapter-inner">
+                        <header class="chapter-header">
+                            <span class="chapter-label">Capítulo VII</span>
+                            <h2 class="chapter-title-main">Todos los sueños que imaginé contigo</h2>
+                            <div class="divider"><span class="divider-rose">🌹</span></div>
+                        </header>
+
+                        <div class="chapter-text">
+                            <p class="drop-cap">Incluye el viaje desde Panamá hasta El Paso, la posibilidad de pasar Navidad y Año Nuevo juntos, el aniversario alrededor del 25 de diciembre, una futura boda, una familia, mascotas, una casa y viajes.</p>
+
+                            <p>Soñé tantas veces con el momento en que el avión aterrizara en El Paso y por fin pudiera verte, abrazarte, no soltar tu mano. Soñé con Navidades y Años Nuevos compartidos, con brindar por nosotros alrededor del 25 de diciembre, nuestro aniversario.</p>
+
+                            <div class="dreams-grid">
+                                <div class="dream-card">
+                                    <span class="dream-icon">✈️</span>
+                                    <h3>Viaje Panamá → El Paso</h3>
+                                    <p>El reencuentro soñado, el primer abrazo real</p>
+                                </div>
+                                <div class="dream-card">
+                                    <span class="dream-icon">🎄</span>
+                                    <h3>Navidad y Año Nuevo juntos</h3>
+                                    <p>Brindar por nosotros, crear tradiciones propias</p>
+                                </div>
+                                <div class="dream-card">
+                                    <span class="dream-icon">💍</span>
+                                    <h3>Aniversario ~25 dic</h3>
+                                    <p>Celebrar cada año más de nuestra historia</p>
+                                </div>
+                                <div class="dream-card">
+                                    <span class="dream-icon">👰</span>
+                                    <h3>Futura boda</h3>
+                                    <p>Prometernos amor eterno frente a quienes amamos</p>
+                                </div>
+                                <div class="dream-card">
+                                    <span class="dream-icon">👨‍👩‍👧</span>
+                                    <h3>Familia</h3>
+                                    <p>Construir un hogar lleno de amor y risas</p>
+                                </div>
+                                <div class="dream-card">
+                                    <span class="dream-icon">🐾</span>
+                                    <h3>Mascotas</h3>
+                                    <p>Compañeros de cuatro patas en nuestra vida</p>
+                                </div>
+                                <div class="dream-card">
+                                    <span class="dream-icon">🏠</span>
+                                    <h3>Una casa</h3>
+                                    <p>Nuestro refugio, nuestro nido, nuestro lugar</p>
+                                </div>
+                                <div class="dream-card">
+                                    <span class="dream-icon">🌍</span>
+                                    <h3>Viajes</h3>
+                                    <p>Conocer el mundo de la mano, sin prisa</p>
+                                </div>
+                            </div>
+
+                            <div class="memory-space" contenteditable="true" data-placeholder="Más sueños que imaginamos juntos, detalles de la boda soñada, nombres para mascotas, destinos de viaje..." aria-label="Espacio para más sueños compartidos">
+                                <span class="placeholder-text">Más sueños: cómo imaginaba nuestra boda, nombres para nuestras mascotas, destinos que queríamos visitar, cómo sería nuestra casa, tradiciones navideñas...</span>
+                            </div>
+
+                            <div class="photo-frame" data-photo="foto_0011.png" data-caption="Yaheyli vestida de novia - un sueño imaginado">
+                                <img src="fotos/foto_0011.png" alt="Yaheyli vestida de novia - un sueño imaginado" loading="lazy">
+                                <div class="photo-caption">Un sueño imaginado: tú de novia</div>
+                            </div>
+
+                            <div class="photo-frame" data-photo="foto_0040.png" data-caption="Boda soñada">
+                                <img src="fotos/foto_0040.png" alt="Boda soñada" loading="lazy">
+                                <div class="photo-caption">Boda soñada</div>
+                            </div>
+                            <div class="photo-frame" data-photo="foto_0041.png" data-caption="Familia futura">
+                                <img src="fotos/foto_0041.png" alt="Familia futura" loading="lazy">
+                                <div class="photo-caption">Familia futura</div>
+                            </div>
+                            <div class="photo-frame" data-photo="foto_0009.png" data-caption="Yaheyli de novia - un sueño">
+                                <img src="fotos/foto_0009.png" alt="Yaheyli de novia - un sueño" loading="lazy">
+                                <div class="photo-caption">Sección de novia: Yaheyli vestida de novia</div>
+                            </div>
+                        </div>
+
+                        <div class="envelope-container">
+                            <button class="envelope" data-envelope="7" aria-label="Abrir carta del Capítulo 7">
+                                <div class="envelope-flap"></div>
+                                <div class="envelope-body">
+                                    <div class="wax-seal-small"></div>
+                                </div>
+                            </button>
+                            <p class="envelope-hint">Pulsa el sobre para descubrir una carta</p>
+                        </div>
+
+                        <div class="envelope-letter hidden" id="letter7" aria-live="polite">
+                            <div class="letter-paper">
+                                <div class="letter-content">
+                                    <p>Mi amor:</p>
+                                    <p>Todos estos sueños los guardé en un rincón especial de mi corazón. Los imaginé contigo porque te quiero en mi futuro. No te pido que los cumplamos, solo que sepas que existieron, que fueron reales, que nacieron de mi amor por ti.</p>
+                                    <p class="letter-signature">Soñando contigo,<br>Víctor</p>
+                                </div>
+                            </div>
+                            <button class="close-letter" data-target="7" aria-label="Cerrar carta">×</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-shadow"></div>
+        </section>
+
+        <!-- CAPÍTULO 8 -->
+        <section class="page chapter-page" data-page="8" data-chapter="8" style="display: none;">
+            <div class="page-content">
+                <div class="ornamental-frame">
+                    <div class="rose-decoration top-left"></div>
+                    <div class="rose-decoration top-right"></div>
+                    <div class="rose-decoration bottom-left"></div>
+                    <div class="rose-decoration bottom-right"></div>
+
+                    <div class="chapter-inner">
+                        <header class="chapter-header">
+                            <span class="chapter-label">Capítulo VIII</span>
+                            <h2 class="chapter-title-main">Todas las pequeñas cosas que hice pensando en ti</h2>
+                            <div class="divider"><span class="divider-rose">🌹</span></div>
+                        </header>
+
+                        <div class="chapter-text">
+                            <p class="drop-cap">Incluye la edición romántica que Víctor preparó, la imagen de Yaheyli vestida de novia y los detalles que creó imaginando un futuro a su lado.</p>
+
+                            <p>Hay amores que se gritan y amores que se susurran en detalles. El mío se escribió en pequeñas cosas: una edición romántica preparada con paciencia, cada foto elegida, cada palabra pensada para ti.</p>
+
+                            <div class="photo-frame" data-photo="foto_0012.png" data-caption="La edición romántica que preparé">
+                                <img src="fotos/foto_0012.png" alt="La edición romántica que preparé" loading="lazy">
+                                <div class="photo-caption">La edición romántica que preparé para ti</div>
+                            </div>
+
+                            <p>Imaginaba tu sonrisa al ver cada detalle. Imaginaba nuestro futuro en cada recorte, en cada frase, en cada canción elegida. La imagen de ti vestida de novia no fue solo una foto editada, fue una visión de lo que mi corazón desea.</p>
+
+                            <div class="photo-frame" data-photo="foto_0013.png" data-caption="Detalles hechos con amor">
+                                <img src="fotos/foto_0013.png" alt="Detalles hechos con amor" loading="lazy">
+                                <div class="photo-caption">Detalles hechos con amor</div>
+                            </div>
+
+                            <div class="memory-space" contenteditable="true" data-placeholder="Más pequeñas cosas: canciones elegidas, mensajes escritos, regalos imaginados, detalles que preparé..." aria-label="Espacio para más pequeños detalles">
+                                <span class="placeholder-text">Más pequeñas cosas: las canciones que elegí pensando en ti, los mensajes que escribí y no envié, los regalos que imaginé, cada detalle que preparé con el corazón...</span>
+                            </div>
+
+                            <div class="photo-frame" data-photo="foto_0014.png" data-caption="Otro detalle romántico">
+                                <img src="fotos/foto_0014.png" alt="Otro detalle romántico" loading="lazy">
+                                <div class="photo-caption">Otro detalle romántico</div>
+                            </div>
+
+                            <div class="photo-frame" data-photo="foto_0028.png" data-caption="Detalle del corazón">
+                                <img src="fotos/foto_0028.png" alt="Detalle del corazón" loading="lazy">
+                                <div class="photo-caption">Detalle del corazón</div>
+                            </div>
+                            <div class="photo-frame" data-photo="foto_0029.png" data-caption="Pequeña alegría">
+                                <img src="fotos/foto_0029.png" alt="Pequeña alegría" loading="lazy">
+                                <div class="photo-caption">Pequeña alegría</div>
+                            </div>
+                        </div>
+
+                        <div class="envelope-container">
+                            <button class="envelope" data-envelope="8" aria-label="Abrir carta del Capítulo 8">
+                                <div class="envelope-flap"></div>
+                                <div class="envelope-body">
+                                    <div class="wax-seal-small"></div>
+                                </div>
+                            </button>
+                            <p class="envelope-hint">Pulsa el sobre para descubrir una carta</p>
+                        </div>
+
+                        <div class="envelope-letter hidden" id="letter8" aria-live="polite">
+                            <div class="letter-paper">
+                                <div class="letter-content">
+                                    <p>Yaheyli:</p>
+                                    <p>Cada pequeña cosa la hice con el alma. No hubo detalle que no pensara en ti. Si alguna vez dudas de cuánto te quiero, mira estos detalles: son la prueba tangible de un amor que no sabe de medidas, solo de entrega.</p>
+                                    <p class="letter-signature">Detallista por ti,<br>Víctor</p>
+                                </div>
+                            </div>
+                            <button class="close-letter" data-target="8" aria-label="Cerrar carta">×</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-shadow"></div>
+        </section>
+
+        <!-- CAPÍTULO 9 -->
+        <section class="page chapter-page" data-page="9" data-chapter="9" style="display: none;">
+            <div class="page-content">
+                <div class="ornamental-frame">
+                    <div class="rose-decoration top-left"></div>
+                    <div class="rose-decoration top-right"></div>
+                    <div class="rose-decoration bottom-left"></div>
+                    <div class="rose-decoration bottom-right"></div>
+
+                    <div class="chapter-inner">
+                        <header class="chapter-header">
+                            <span class="chapter-label">Capítulo IX</span>
+                            <h2 class="chapter-title-main">No quiero que nuestros errores sean lo único que recordemos</h2>
+                            <div class="divider"><span class="divider-rose">🌹</span></div>
+                        </header>
+
+                        <div class="chapter-text">
+                            <p class="drop-cap">Un capítulo reflexivo sobre la importancia de reconocer los errores, aprender, perdonar cuando sea posible y construir una relación más sana.</p>
+
+                            <p>Es fácil recordar lo que duele. Lo difícil es mirar atrás con compasión, ver los errores de ambos, y elegir no quedarse ahí. No quiero que el dolor sea el único protagonista de nuestra historia.</p>
+
+                            <p>Reconocer los errores no es debilidad, es valentía. Aprender de ellos es sabiduría. Perdonar —cuando sea posible y cuando el corazón lo permita— es liberarse. Y construir algo más sano, juntos o por separado, es el mayor acto de amor propio y mutuo.</p>
+
+                            <div class="memory-space" contenteditable="true" data-placeholder="Reflexión sobre errores, aprendizaje, perdón, construcción de relación sana..." aria-label="Espacio para reflexión sobre errores y perdón">
+                                <span class="placeholder-text">Reflexión: qué errores reconozco de ambos, qué aprendí de cada uno, si puedo perdonar y cómo, qué significa para mí una relación más sana...</span>
+                            </div>
+
+                            <div class="photo-frame" data-photo="foto_0015.png" data-caption="De los errores nacen flores nuevas">
+                                <img src="fotos/foto_0015.png" alt="De los errores nacen flores nuevas" loading="lazy">
+                                <div class="photo-caption">De los errores pueden nacer flores nuevas</div>
+                            </div>
+
+                            <div class="photo-frame" data-photo="foto_0026.png" data-caption="Aprendizaje y crecimiento">
+                                <img src="fotos/foto_0026.png" alt="Aprendizaje y crecimiento" loading="lazy">
+                                <div class="photo-caption">Aprendizaje y crecimiento</div>
+                            </div>
+                            <div class="photo-frame" data-photo="foto_0027.png" data-caption="Perdón y sanación">
+                                <img src="fotos/foto_0027.png" alt="Perdón y sanación" loading="lazy">
+                                <div class="photo-caption">Perdón y sanación</div>
+                            </div>
+                        </div>
+
+                        <div class="envelope-container">
+                            <button class="envelope" data-envelope="9" aria-label="Abrir carta del Capítulo 9">
+                                <div class="envelope-flap"></div>
+                                <div class="envelope-body">
+                                    <div class="wax-seal-small"></div>
+                                </div>
+                            </button>
+                            <p class="envelope-hint">Pulsa el sobre para descubrir una carta</p>
+                        </div>
+
+                        <div class="envelope-letter hidden" id="letter9" aria-live="polite">
+                            <div class="letter-paper">
+                                <div class="letter-content">
+                                    <p>Mi niña:</p>
+                                    <p>No quiero que mires atrás y solo veas espinas. Quiero que veas también las rosas que crecieron entre ellas. Nuestros errores nos enseñaron quiénes no queremos ser. Ese aprendizaje es valioso, y ojalá podamos usarlo para algo bonito, sea cual sea nuestro camino.</p>
+                                    <p class="letter-signature">Con esperanza,<br>Víctor</p>
+                                </div>
+                            </div>
+                            <button class="close-letter" data-target="9" aria-label="Cerrar carta">×</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-shadow"></div>
+        </section>
+
+        <!-- CAPÍTULO 10 -->
+        <section class="page chapter-page" data-page="10" data-chapter="10" style="display: none;">
+            <div class="page-content">
+                <div class="ornamental-frame">
+                    <div class="rose-decoration top-left"></div>
+                    <div class="rose-decoration top-right"></div>
+                    <div class="rose-decoration bottom-left"></div>
+                    <div class="rose-decoration bottom-right"></div>
+
+                    <div class="chapter-inner">
+                        <header class="chapter-header">
+                            <span class="chapter-label">Capítulo X</span>
+                            <h2 class="chapter-title-main">Lo que estoy dispuesto a demostrar</h2>
+                            <div class="divider"><span class="divider-rose">🌹</span></div>
+                        </header>
+
+                        <div class="chapter-text">
+                            <p class="drop-cap">Una declaración de compromiso de Víctor. No solamente palabras bonitas, sino acciones, paciencia, respeto, comunicación, madurez y constancia.</p>
+
+                            <p>Las palabras se las lleva el viento. Lo que queda son los hechos. Esta es mi promesa no de perfección, sino de intención y constancia.</p>
+
+                            <ul class="commitment-list">
+                                <li><span class="commitment-icon">🌹</span> <strong>Acciones:</strong> Que mis hechos hablen más que mis palabras</li>
+                                <li><span class="commitment-icon">🌹</span> <strong>Paciencia:</strong> Respetar tus tiempos, tus procesos, tu sanación</li>
+                                <li><span class="commitment-icon">🌹</span> <strong>Respeto:</strong> Honrar tus límites, tus decisiones, tu sentir</li>
+                                <li><span class="commitment-icon">🌹</span> <strong>Comunicación:</strong> Hablar con verdad, escuchar con el corazón</li>
+                                <li><span class="commitment-icon">🌹</span> <strong>Madurez:</strong> Asumir mis errores, gestionar mis emociones, crecer</li>
+                                <li><span class="commitment-icon">🌹</span> <strong>Constancia:</strong> No rendirme a la primera, sostener el esfuerzo en el tiempo</li>
+                            </ul>
+
+                            <div class="memory-space" contenteditable="true" data-placeholder="Compromisos concretos, acciones específicas que voy a tomar, cómo voy a demostrar cada uno de estos valores..." aria-label="Espacio para compromisos concretos">
+                                <span class="placeholder-text">Compromisos concretos: acciones específicas que voy a tomar cada día, cómo demostraré paciencia, respeto, comunicación, madurez y constancia en la práctica...</span>
+                            </div>
+
+                            <div class="photo-frame" data-photo="foto_0016.png" data-caption="Compromiso real, amor real">
+                                <img src="fotos/foto_0016.png" alt="Compromiso real, amor real" loading="lazy">
+                                <div class="photo-caption">Compromiso real, amor real</div>
+                            </div>
+
+                            <div class="photo-frame" data-photo="foto_0024.png" data-caption="Promesa de amor">
+                                <img src="fotos/foto_0024.png" alt="Promesa de amor" loading="lazy">
+                                <div class="photo-caption">Promesa de amor</div>
+                            </div>
+                            <div class="photo-frame" data-photo="foto_0025.png" data-caption="Compromiso eterno">
+                                <img src="fotos/foto_0025.png" alt="Compromiso eterno" loading="lazy">
+                                <div class="photo-caption">Compromiso eterno</div>
+                            </div>
+                        </div>
+
+                        <div class="envelope-container">
+                            <button class="envelope" data-envelope="10" aria-label="Abrir carta del Capítulo 10">
+                                <div class="envelope-flap"></div>
+                                <div class="envelope-body">
+                                    <div class="wax-seal-small"></div>
+                                </div>
+                            </button>
+                            <p class="envelope-hint">Pulsa el sobre para descubrir una carta</p>
+                        </div>
+
+                        <div class="envelope-letter hidden" id="letter10" aria-live="polite">
+                            <div class="letter-paper">
+                                <div class="letter-content">
+                                    <p>Yaheyli:</p>
+                                    <p>No te pido que me creas hoy. Te pido que me observes con el tiempo. La constancia es la única prueba real del amor. Estoy dispuesto a demostrarlo, día a día, sin excusas, sin condiciones, solo con la verdad de mis acciones.</p>
+                                    <p class="letter-signature">Con hechos,<br>Víctor</p>
+                                </div>
+                            </div>
+                            <button class="close-letter" data-target="10" aria-label="Cerrar carta">×</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-shadow"></div>
+        </section>
+
+        <!-- CAPÍTULO 11 -->
+        <section class="page chapter-page" data-page="11" data-chapter="11" style="display: none;">
+            <div class="page-content">
+                <div class="ornamental-frame">
+                    <div class="rose-decoration top-left"></div>
+                    <div class="rose-decoration top-right"></div>
+                    <div class="rose-decoration bottom-left"></div>
+                    <div class="rose-decoration bottom-right"></div>
+
+                    <div class="chapter-inner">
+                        <header class="chapter-header">
+                            <span class="chapter-label">Capítulo XI</span>
+                            <h2 class="chapter-title-main">Todavía sueño con nuevas páginas contigo</h2>
+                            <div class="divider"><span class="divider-rose">🌹</span></div>
+                        </header>
+
+                        <div class="chapter-text">
+                            <p class="drop-cap">Este capítulo debe transmitir esperanza. Víctor todavía desea compartir momentos, crear recuerdos, conocerse personalmente y vivir experiencias que alguna vez imaginaron.</p>
+
+                            <p>La esperanza no es ingenuidad, es la certeza de que el amor vale la pena. Todavía sueño contigo. Todavía quiero conocerte en persona, no a través de una pantalla. Todavía quiero crear recuerdos que no necesiten ser editados, vivirlos en tiempo real, sentir tu mano en la mía.</p>
+
+                            <div class="memory-space" contenteditable="true" data-placeholder="Qué experiencias quiero vivir contigo, qué momentos quiero compartir, qué significa para mí conocerte en persona..." aria-label="Espacio para esperanzas y sueños futuros">
+                                <span class="placeholder-text">Experiencias que quiero vivir contigo: caminar de la mano, cocinar juntos, ver atardeceres, viajar sin planes, reír hasta que duela el estómago, conocerte en persona, descubrir tus gestos, tu olor, tu risa real...</span>
+                            </div>
+
+                            <div class="photo-frame" data-photo="foto_0017.png" data-caption="Nuevas páginas por escribir">
+                                <img src="fotos/foto_0017.png" alt="Nuevas páginas por escribir" loading="lazy">
+                                <div class="photo-caption">Nuevas páginas por escribir</div>
+                            </div>
+
+                            <div class="photo-frame" data-photo="foto_0018.png" data-caption="Esperanza en cada pétalo">
+                                <img src="fotos/foto_0018.png" alt="Esperanza en cada pétalo" loading="lazy">
+                                <div class="photo-caption">Esperanza en cada pétalo</div>
+                            </div>
+
+                            <div class="photo-frame" data-photo="foto_0022.png" data-caption="Recuerdo especial">
+                                <img src="fotos/foto_0022.png" alt="Recuerdo especial" loading="lazy">
+                                <div class="photo-caption">Recuerdo especial</div>
+                            </div>
+                            <div class="photo-frame" data-photo="foto_0023.png" data-caption="Otro momento hermoso">
+                                <img src="fotos/foto_0023.png" alt="Otro momento hermoso" loading="lazy">
+                                <div class="photo-caption">Otro momento hermoso</div>
+                            </div>
+                        </div>
+
+                        <div class="envelope-container">
+                            <button class="envelope" data-envelope="11" aria-label="Abrir carta del Capítulo 11">
+                                <div class="envelope-flap"></div>
+                                <div class="envelope-body">
+                                    <div class="wax-seal-small"></div>
+                                </div>
+                            </button>
+                            <p class="envelope-hint">Pulsa el sobre para descubrir una carta</p>
+                        </div>
+
+                        <div class="envelope-letter hidden" id="letter11" aria-live="polite">
+                            <div class="letter-paper">
+                                <div class="letter-content">
+                                    <p>Mi amor:</p>
+                                    <p>Todavía te sueño. Todavía te quiero. Todavía creo en nosotros. No te pido que sientas lo mismo, solo que sepas que mi esperanza es genuina, que mi deseo de compartir vida contigo es real, y que si algún día tus caminos y los míos quieren unirse de nuevo, aquí estaré, con las manos abiertas y el corazón listo.</p>
+                                    <p class="letter-signature">Soñando contigo,<br>Víctor</p>
+                                </div>
+                            </div>
+                            <button class="close-letter" data-target="11" aria-label="Cerrar carta">×</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-shadow"></div>
+        </section>
+
+        <!-- CAPÍTULO 12 -->
+        <section class="page chapter-page final-letter-page" data-page="12" data-chapter="12" style="display: none;">
+            <div class="page-content">
+                <div class="ornamental-frame">
+                    <div class="rose-decoration top-left"></div>
+                    <div class="rose-decoration top-right"></div>
+                    <div class="rose-decoration bottom-left"></div>
+                    <div class="rose-decoration bottom-right"></div>
+
+                    <div class="chapter-inner final-letter-inner">
+                        <header class="chapter-header">
+                            <span class="chapter-label">Capítulo XII</span>
+                            <h2 class="chapter-title-main">Una carta para ti, Yaheyli</h2>
+                            <div class="divider"><span class="divider-rose">🌹</span></div>
+                        </header>
+
+                        <div class="final-letter">
+                            <div class="letter-paper final-letter-paper">
+                                <div class="letter-content final-letter-content">
+                                    <p class="letter-salutation">Yaheyli, mi niña:</p>
+
+                                    <p>No quiero que pienses que solamente recuerdo los momentos bonitos ni que olvido las veces que nos equivocamos. Recuerdo ambas cosas, porque nuestra historia no fue perfecta, pero para mí fue importante y significó muchísimo.</p>
+
+                                    <p>Sé que amar también significa reconocer cuando uno se equivoca, aprender, cambiar y demostrarlo.</p>
+
+                                    <p>No quiero prometerte que nunca volveremos a tener dificultades. Quiero prometerte que estoy dispuesto a trabajar en mí, aprender a escucharte y hacer las cosas mejor.</p>
+
+                                    <p>Todavía tengo sueños que alguna vez imaginé contigo. Todavía hay lugares que quisiera conocer a tu lado, abrazos que quisiera darte y recuerdos que me encantaría construir.</p>
+
+                                    <p>No quiero obligarte a sentir lo mismo que yo ni pedirte que ignores lo que has sentido. Quiero que sepas que mi intención es sincera y que, si algún día ambos queremos intentarlo nuevamente, me gustaría hacerlo de una manera mucho más bonita y madura.</p>
+
+                                    <p class="letter-closing-line">Porque para mí, Yaheyli, nuestra historia todavía tiene páginas que me gustaría escribir contigo.</p>
+
+                                    <p class="letter-signature final-signature">
+                                        Con todo mi amor,<br>
+                                        Víctor
+                                    </p>
+
+                                    <div class="final-seal">
+                                        <div class="wax-seal-large"></div>
+                                    </div>
+                                </div>
+
+                                <div class="pressed-flowers">
+                                    <span>🌹</span><span>🌸</span><span>🌹</span><span>🌸</span><span>🌹</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-shadow"></div>
+        </section>
+
+        <!-- SECCIÓN: NUEVOS RECUERDOS -->
+        <section class="page new-memories-page" data-page="new-memories" style="display: none;">
+            <div class="page-content">
+                <div class="ornamental-frame">
+                    <div class="rose-decoration top-left"></div>
+                    <div class="rose-decoration top-right"></div>
+                    <div class="rose-decoration bottom-left"></div>
+                    <div class="rose-decoration bottom-right"></div>
+
+                    <div class="chapter-inner">
+                        <header class="chapter-header">
+                            <h2 class="chapter-title-main">Nuevos recuerdos que todavía podemos crear</h2>
+                            <div class="divider"><span class="divider-rose">🌹</span></div>
+                        </header>
+
+                        <div class="chapter-text">
+                            <p class="drop-cap">Esta sección es un espacio abierto para el futuro. Para soñar, para planear, para imaginar todo lo que aún está por vivir.</p>
+
+                            <div class="new-memories-grid">
+                                <div class="memory-card" contenteditable="true" data-placeholder="Escribe un recuerdo que te gustaría crear..." aria-label="Nuevo recuerdo 1">
+                                    <span class="placeholder-text">Un viaje juntos a...</span>
+                                </div>
+                                <div class="memory-card" contenteditable="true" data-placeholder="Escribe un recuerdo que te gustaría crear..." aria-label="Nuevo recuerdo 2">
+                                    <span class="placeholder-text">Una cena casera un domingo...</span>
+                                </div>
+                                <div class="memory-card" contenteditable="true" data-placeholder="Escribe un recuerdo que te gustaría crear..." aria-label="Nuevo recuerdo 3">
+                                    <span class="placeholder-text">Ver el amanecer abrazados...</span>
+                                </div>
+                                <div class="memory-card" contenteditable="true" data-placeholder="Escribe un recuerdo que te gustaría crear..." aria-label="Nuevo recuerdo 4">
+                                    <span class="placeholder-text">Celebrar nuestro aniversario...</span>
+                                </div>
+                                <div class="memory-card" contenteditable="true" data-placeholder="Escribe un recuerdo que te gustaría crear..." aria-label="Nuevo recuerdo 5">
+                                    <span class="placeholder-text">Adoptar una mascota juntos...</span>
+                                </div>
+                                <div class="memory-card" contenteditable="true" data-placeholder="Escribe un recuerdo que te gustaría crear..." aria-label="Nuevo recuerdo 6">
+                                    <span class="placeholder-text">Decorar nuestra casa en navidad...</span>
+                                </div>
+                            </div>
+
+                            <div class="memory-space large" contenteditable="true" data-placeholder="Escribe aquí todos los nuevos recuerdos que imaginas, sueños por cumplir, planes por hacer..." aria-label="Espacio libre para nuevos recuerdos">
+                                <span class="placeholder-text">Todos los nuevos recuerdos que todavía podemos crear: viajes, momentos cotidianos, celebraciones, primeras veces, tradiciones nuestras, una vida por construir...</span>
+                            </div>
+
+                            <div class="photo-frame" data-photo="foto_0019.png" data-caption="El futuro nos espera">
+                                <img src="fotos/foto_0019.png" alt="El futuro nos espera" loading="lazy">
+                                <div class="photo-caption">El futuro nos espera — 182 cm y 163 cm</div>
+                            </div>
+
+                            <div class="photo-frame" data-photo="foto_0038.png" data-caption="Sueño compartido">
+                                <img src="fotos/foto_0038.png" alt="Sueño compartido" loading="lazy">
+                                <div class="photo-caption">Sueño compartido</div>
+                            </div>
+                            <div class="photo-frame" data-photo="foto_0039.png" data-caption="Porvenir juntos">
+                                <img src="fotos/foto_0039.png" alt="Porvenir juntos" loading="lazy">
+                                <div class="photo-caption">Porvenir juntos</div>
+                            </div>
+                        </div>
+
+                        <div class="envelope-container">
+                            <button class="envelope" data-envelope="12" aria-label="Abrir carta final de nuevos recuerdos">
+                                <div class="envelope-flap"></div>
+                                <div class="envelope-body">
+                                    <div class="wax-seal-small"></div>
+                                </div>
+                            </button>
+                            <p class="envelope-hint">Pulsa el sobre para descubrir una carta</p>
+                        </div>
+
+                        <div class="envelope-letter hidden" id="letter12" aria-live="polite">
+                            <div class="letter-paper">
+                                <div class="letter-content">
+                                    <p>Yaheyli:</p>
+                                    <p>Este espacio es tuyo. Llénalo con lo que tu corazón dicte. No hay respuestas correctas, solo posibilidades. Yo seguiré soñando con cada una de ellas, esperando que la vida nos dé la oportunidad de hacerlas realidad, juntos.</p>
+                                    <p class="letter-signature">Siempre soñando,<br>Víctor</p>
+                                </div>
+                            </div>
+                            <button class="close-letter" data-target="12" aria-label="Cerrar carta">×</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-shadow"></div>
+        </section>
+
+        <!-- GALERÍA DE RECUERDOS -->
+        <section class="page gallery-page" data-page="gallery" style="display: none;">
+            <div class="page-content">
+                <div class="ornamental-frame">
+                    <div class="rose-decoration top-left"></div>
+                    <div class="rose-decoration top-right"></div>
+                    <div class="rose-decoration bottom-left"></div>
+                    <div class="rose-decoration bottom-right"></div>
+
+                    <div class="chapter-inner">
+                        <header class="chapter-header">
+                            <h2 class="chapter-title-main">Galería de Recuerdos</h2>
+                            <div class="divider"><span class="divider-rose">🌹</span></div>
+                        </header>
+
+                        <div class="full-gallery" id="fullGallery">
+                            <!-- Las 43 fotos se insertarán dinámicamente -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-shadow"></div>
+        </section>
+
+        <!-- MÚSICA -->
+        <section class="page music-page" data-page="music" style="display: none;">
+            <div class="page-content">
+                <div class="ornamental-frame">
+                    <div class="rose-decoration top-left"></div>
+                    <div class="rose-decoration top-right"></div>
+                    <div class="rose-decoration bottom-left"></div>
+                    <div class="rose-decoration bottom-right"></div>
+
+                    <div class="chapter-inner">
+                        <header class="chapter-header">
+                            <h2 class="chapter-title-main">Nuestra Música</h2>
+                            <div class="divider"><span class="divider-rose">🌹</span></div>
+                        </header>
+
+                        <div class="chapter-text">
+                            <p class="drop-cap">Las canciones que marcaron nuestra historia, las que sonaban cuando pensábamos el uno en el otro, la banda sonora de nuestro amor.</p>
+
+                            <div class="song-cards">
+                                <div class="song-card">
+                                    <div class="song-icon">🎵</div>
+                                    <h3>Ebrio de Amor</h3>
+                                    <p class="song-artist">Nuestra canción</p>
+                                    <button class="btn-play-song" data-song="1" aria-label="Reproducir Ebrio de Amor">
+                                        <span>▶</span> Escuchar en tu plataforma favorita
+                                    </button>
+                                </div>
+                                <div class="song-card">
+                                    <div class="song-icon">🎵</div>
+                                    <h3>No One Noticed</h3>
+                                    <p class="song-artist">Nuestra segunda canción</p>
+                                    <button class="btn-play-song" data-song="2" aria-label="Reproducir No One Noticed">
+                                        <span>▶</span> Escuchar en tu plataforma favorita
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="memory-space" contenteditable="true" data-placeholder="Qué significan estas canciones para nosotros, recuerdos asociados, momentos en que sonaron..." aria-label="Espacio para recuerdos musicales">
+                                <span class="placeholder-text">Qué significan estas canciones: cuándo la escuchamos por primera vez, qué momentos nos recuerdan, por qué son 'nuestras' canciones...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-shadow"></div>
+        </section>
+
+        <!-- JUGANDO CON MATEO -->
+        <section class="page mateo-page" data-page="mateo" style="display: none;">
+            <div class="page-content">
+                <div class="ornamental-frame">
+                    <div class="rose-decoration top-left"></div>
+                    <div class="rose-decoration top-right"></div>
+                    <div class="rose-decoration bottom-left"></div>
+                    <div class="rose-decoration bottom-right"></div>
+
+                    <div class="chapter-inner">
+                        <header class="chapter-header">
+                            <h2 class="chapter-title-main">Jugando con Mateo</h2>
+                            <div class="divider"><span class="divider-rose">🌹</span></div>
+                        </header>
+
+                        <div class="chapter-text">
+                            <p class="drop-cap">Un espacio para los momentos con Mateo, risas compartidas, juegos, y la familia que imaginamos.</p>
+
+                            <div class="photo-frame" data-photo="foto_0020.png" data-caption="Jugando con Mateo">
+                                <img src="fotos/foto_0020.png" alt="Jugando con Mateo" loading="lazy">
+                                <div class="photo-caption">Jugando con Mateo</div>
+                            </div>
+
+                            <div class="photo-frame" data-photo="foto_0021.png" data-caption="Momentos familiares">
+                                <img src="fotos/foto_0021.png" alt="Momentos familiares" loading="lazy">
+                                <div class="photo-caption">Momentos familiares</div>
+                            </div>
+
+                            <div class="photo-frame" data-photo="foto_0023.png" data-caption="Mateo y sus aventuras">
+                                <img src="fotos/foto_0023.png" alt="Mateo y sus aventuras" loading="lazy">
+                                <div class="photo-caption">Mateo</div>
+                            </div>
+
+                            <div class="photo-frame" data-photo="foto_0042.png" data-caption="Juegos con Mateo">
+                                <img src="fotos/foto_0042.png" alt="Juegos con Mateo" loading="lazy">
+                                <div class="photo-caption">Juegos con Mateo</div>
+                            </div>
+                            <div class="photo-frame" data-photo="foto_0043.png" data-caption="Familia completa">
+                                <img src="fotos/foto_0043.png" alt="Familia completa" loading="lazy">
+                                <div class="photo-caption">Familia completa</div>
+                            </div>
+
+                            <div class="memory-space" contenteditable="true" data-placeholder="Recuerdos con Mateo, juegos, risas, cómo imaginamos la familia..." aria-label="Espacio para recuerdos con Mateo">
+                                <span class="placeholder-text">Recuerdos con Mateo: juegos, risas, momentos tiernos, cómo imaginamos nuestra familia creciendo juntos...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-shadow"></div>
+        </section>
+
+        <!-- MINI-JUEGOS DE RECUERDOS -->
+        <section class="page minigames-page" data-page="minigames" style="display: none;">
+            <div class="page-content">
+                <div class="ornamental-frame">
+                    <div class="rose-decoration top-left"></div>
+                    <div class="rose-decoration top-right"></div>
+                    <div class="rose-decoration bottom-left"></div>
+                    <div class="rose-decoration bottom-right"></div>
+
+                    <div class="chapter-inner">
+                        <header class="chapter-header">
+                            <h2 class="chapter-title-main">Nuestros Mini-Juegos de Recuerdos</h2>
+                            <div class="divider"><span class="divider-rose">🌹</span></div>
+                        </header>
+
+                        <div class="chapter-text">
+                            <p class="drop-cap">Tres pequeños juegos para revivir nuestra historia jugando. Suaves, dulces, hechos con cariño.</p>
+
+                            <!-- JUEGO 1: MAPA INTERACTIVO -->
+                            <div class="minigame-card" id="minigameMap">
+                                <h3 class="minigame-title">🗺️ Mapa Interactivo: Panamá → El Paso</h3>
+                                <p class="minigame-desc">Desbloquea notas de amor en cada parada del viaje. Haz clic en los marcadores para revelar recuerdos.</p>
+                                <div class="interactive-map" id="interactiveMap">
+                                    <div class="map-bg"></div>
+                                    <button class="map-marker" data-marker="1" data-note="Aquí empezó todo: el primer 'hola' que cruzó el mar." style="left: 15%; top: 55%;" aria-label="Panamá - Primer mensaje"></button>
+                                    <button class="map-marker" data-marker="2" data-note="Videollamadas infinitas, risas a medianoche, el tiempo se detenía." style="left: 35%; top: 45%;" aria-label="En el aire - Videollamadas"></button>
+                                    <button class="map-marker" data-marker="3" data-note="La cuenta regresiva: cada día un paso más cerca del abrazo." style="left: 55%; top: 35%;" aria-label="Camino - Cuenta regresiva"></button>
+                                    <button class="map-marker" data-marker="4" data-note="El Paso, Texas: donde soñé contigo en persona, el reencuentro soñado." style="left: 80%; top: 30%;" aria-label="El Paso - Reencuentro"></button>
+                                    <div class="map-path"></div>
+                                </div>
+                                <div class="map-note" id="mapNote" aria-live="polite">
+                                    <p>Pulsa un marcador en el mapa para descubrir una nota...</p>
+                                </div>
+                            </div>
+
+                            <!-- JUEGO 2: TRIVIA -->
+                            <div class="minigame-card" id="minigameTrivia">
+                                <h3 class="minigame-title">🎵 Trivia de Nuestra Historia</h3>
+                                <p class="minigame-desc">Responde 5 preguntas sobre nuestras canciones y momentos. Si aciertas 3, se abre un sobre secreto.</p>
+                                <div class="trivia-container" id="triviaContainer">
+                                    <div class="trivia-progress">
+                                        <span id="triviaCurrent">1</span> / 5
+                                        <div class="trivia-bar"><div class="trivia-fill" id="triviaFill" style="width: 20%;"></div></div>
+                                    </div>
+                                    <div class="trivia-question" id="triviaQuestion"></div>
+                                    <div class="trivia-options" id="triviaOptions"></div>
+                                    <div class="trivia-feedback" id="triviaFeedback" aria-live="polite"></div>
+                                    <button class="btn-trivia-next" id="btnTriviaNext" disabled>Siguiente →</button>
+                                    <button class="btn-trivia-restart hidden" id="btnTriviaRestart">Reiniciar</button>
+                                </div>
+                                <div class="trivia-secret hidden" id="triviaSecret">
+                                    <div class="envelope secret-envelope" id="secretEnvelope">
+                                        <div class="envelope-flap"></div>
+                                        <div class="envelope-body"><div class="wax-seal-small"></div></div>
+                                    </div>
+                                    <p class="envelope-hint">¡Lo lograste! Pulsa el sobre dorado para tu recompensa</p>
+                                    <div class="secret-letter hidden" id="secretLetter">
+                                        <div class="letter-paper">
+                                            <div class="letter-content">
+                                                <p>Yaheyli, mi niña:</p>
+                                                <p>Conoces nuestra historia mejor que nadie. Cada respuesta correcta es un latido de lo que fuimos y de lo que aún podemos ser. Este sobre guarda mi promesa: seguiré aprendiendo de ti, escuchándote, amándote en los detalles.</p>
+                                                <p class="letter-signature">Siempre tuyo,<br>Víctor</p>
+                                            </div>
+                                        </div>
+                                        <button class="close-letter" data-target="secret" aria-label="Cerrar carta secreta">×</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- JUEGO 3: ROMPECABEZAS -->
+                            <div class="minigame-card" id="minigamePuzzle">
+                                <h3 class="minigame-title">🧩 Rompecabezas de 9 Piezas</h3>
+                                <p class="minigame-desc">Recompone una de nuestras fotos favoritas. Arrastra las piezas a su lugar.</p>
+                                <div class="puzzle-container" id="puzzleContainer">
+                                    <div class="puzzle-board" id="puzzleBoard" aria-label="Tablero del rompecabezas 3x3"></div>
+                                    <div class="puzzle-pieces" id="puzzlePieces" aria-label="Piezas sueltas"></div>
+                                </div>
+                                <div class="puzzle-controls">
+                                    <button class="btn-puzzle-shuffle" id="btnPuzzleShuffle">Mezclar</button>
+                                    <button class="btn-puzzle-check" id="btnPuzzleCheck">Comprobar</button>
+                                </div>
+                                <div class="puzzle-message" id="puzzleMessage" aria-live="polite"></div>
+                                <div class="puzzle-complete hidden" id="puzzleComplete">
+                                    <div class="wax-seal-large pulse" style="width: 80px; height: 80px; margin: 0 auto;"></div>
+                                    <p>¡Completaste el rompecabezas! 🌹</p>
+                                    <p class="letter-signature">Cada pieza encaja, como nosotros.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-shadow"></div>
+        </section>
+
+        <!-- LIGHTBOX PARA FOTOS -->
+        <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+            <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar imagen">×</button>
+            <button class="lightbox-prev" id="lightboxPrev" aria-label="Imagen anterior">‹</button>
+            <button class="lightbox-next" id="lightboxNext" aria-label="Imagen siguiente">›</button>
+            <img class="lightbox-image" id="lightboxImage" src="" alt="">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+            <div class="lightbox-counter" id="lightboxCounter"></div>
+        </div>
+
+        <!-- NAVEGACIÓN INFERIOR -->
+        <nav class="book-navigation" id="bookNavigation" style="display: none;" aria-label="Navegación del libro">
+            <button class="nav-btn" id="prevPage" aria-label="Página anterior">‹ Anterior</button>
+            <div class="page-indicator" id="pageIndicator">
+                <span id="currentPage">1</span> / <span id="totalPages">12</span>
+            </div>
+            <button class="nav-btn" id="nextPage" aria-label="Página siguiente">Siguiente ›</button>
+        </nav>
+
+        <!-- BOTONES FLOTANTES -->
+        <div class="floating-buttons" id="floatingButtons" style="display: none;">
+            <button class="float-btn" id="btnIndex" aria-label="Ir al índice" title="Índice">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+            </button>
+            <button class="float-btn" id="btnHome" aria-label="Volver al inicio" title="Inicio">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+            </button>
+            <button class="float-btn" id="btnPDF" aria-label="Descargar PDF" title="Descargar PDF">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                    <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+            </button>
+            <button class="float-btn" id="btnGallery" aria-label="Galería de recuerdos" title="Galería">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="3" width="20" height="14" rx="2"></rect>
+                    <path d="M8 21h8"></path>
+                    <path d="M12 17v4"></path>
+                </svg>
+            </button>
+            <button class="float-btn" id="btnMusic" aria-label="Nuestra música" title="Música">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 18V5l12-2v13"></path>
+                    <circle cx="6" cy="18" r="3"></circle>
+                    <circle cx="18" cy="16" r="3"></circle>
+                </svg>
+            </button>
+            <button class="float-btn" id="btnMateo" aria-label="Jugando con Mateo" title="Mateo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- TOAST NOTIFICATIONS -->
+        <div class="toast-container" id="toastContainer"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
